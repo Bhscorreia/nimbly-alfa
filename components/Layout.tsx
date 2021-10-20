@@ -39,9 +39,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       </div>
     </nav>
     </header>
-    <body>
-    {children}
-    </body>
+    {children}    
     <div className="clearfix"></div>
     <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div className="col-md-4 d-flex align-items-center">
