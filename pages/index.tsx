@@ -12,7 +12,7 @@ const IndexPage = () => (
         <form className="row g-3">
           <div className="col-auto">
             <label className="visually-hidden">CPF ou CNPJ</label>
-            <input type="text" id="cpfcnpj" data-inputmask-regex="^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2}|\d{3}\.?\d{3}\.?\d{3}-?\d{2})$" className="form-control form-control-lg" placeholder="Cpf ou CNPJ" onChange={changeCpgCnpj} id="btnCpfCnpj" />
+            <input type="text" id="cpfcnpj" data-inputmask-regex="^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2}|\d{3}\.?\d{3}\.?\d{3}-?\d{2})$" className="form-control form-control-lg" placeholder="Cpf ou CNPJ" onChange={changeCpgCnpj} />
           </div>
           <div className="col-auto">
             <button type="button" className="btn btn-primary btn-lg mb-3" onClick={Enviar}>Enviar</button>            
