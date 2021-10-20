@@ -37,6 +37,8 @@ function Enviar() {
   if(!cpfcnpj){
     global.document.getElementById("cpfcnpj").focus();
     global.document.getElementById("statusToast").style.display = 'block';
+  } else {
+    alert("Estamos trabalhando nisto 🙂");
   }
 }
 
