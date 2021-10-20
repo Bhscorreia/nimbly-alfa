@@ -1,0 +1,52 @@
+import Link from 'next/link'
+import Layout from '../components/Layout'
+
+const AboutPage = () => (
+  <Layout title="Spbre nós | Nimbly-Alfa">
+    <div className="px-4 py-5 my-5 text-center">
+      <h1 className="display-5 fw-bold">Lorem Ipsum</h1>
+      <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+      <h5>"Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor..."</h5>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices volutpat egestas. Ut ultricies, sem ac hendrerit condimentum, neque libero aliquam velit, a porta turpis justo id purus. Sed malesuada nunc quam, vitae viverra lacus iaculis et. Vivamus in fringilla magna. Curabitur vel ullamcorper mi, quis aliquam nibh. Etiam vitae nunc eu ante pharetra cursus id in erat. Nam scelerisque volutpat tempus. Aliquam at urna finibus massa porta cursus quis ac massa. Etiam ligula nunc, fringilla id lacinia et, aliquet eget risus. Nulla rhoncus tellus at facilisis tempus. In tempor enim quis ante aliquam, vel volutpat felis malesuada.
+
+        Mauris vitae egestas purus. Nam egestas gravida nunc in sollicitudin. Cras nec turpis faucibus, tempor nisl id, rutrum nisi. Etiam laoreet faucibus urna, et varius quam iaculis dignissim. Curabitur bibendum, odio vitae imperdiet accumsan, purus tellus venenatis est, non bibendum arcu nisi vitae quam. Vestibulum dolor ligula, iaculis vitae maximus non, rutrum eleifend nisi. Suspendisse nec magna euismod, fermentum libero sed, ultricies justo. Phasellus justo ligula, lobortis ac tellus sit amet, lobortis sollicitudin est. Pellentesque rutrum mattis dui, ut euismod odio luctus sit amet. Cras aliquam lorem pretium justo congue eleifend. Aenean pretium, purus mattis tristique ullamcorper, purus est condimentum mauris, vel interdum enim urna eget risus. Integer non elit ac lectus dapibus tincidunt. Sed quam tellus, sodales sit amet ullamcorper in, tempor eleifend tortor. Morbi enim dui, dictum quis semper vel, feugiat eu nunc. Duis laoreet mi et tincidunt congue.
+
+        Etiam ex ex, eleifend non sollicitudin eget, imperdiet nec ex. Etiam finibus justo tortor, a rhoncus mauris ultricies eget. Nullam sed sapien pretium ligula viverra facilisis eu eget metus. Morbi ut semper nisi, eget euismod nibh. Vestibulum sit amet lacus ac leo interdum tincidunt. Phasellus velit massa, porttitor a urna posuere, placerat vehicula lorem. Donec convallis sapien non metus eleifend, ornare pulvinar tortor scelerisque. Sed a tellus sit amet urna dignissim hendrerit.
+
+        Praesent mattis tempor nulla quis pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed elit ex, bibendum ut vehicula volutpat, sollicitudin eu enim. Duis accumsan, est eu dignissim vulputate, felis enim consequat eros, quis pellentesque purus neque eu eros. Nunc euismod mi nisi, nec luctus lorem fermentum ut. Aliquam aliquet diam eu diam vehicula cursus. Nam faucibus risus nec suscipit sollicitudin. Sed rutrum risus in dui consequat facilisis. Nam blandit sem vitae rhoncus fermentum. Fusce dolor mi, consequat a sem at, vestibulum aliquet tortor. Integer nisl nisl, porttitor quis aliquet vitae, pulvinar vel nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi dui lacus, bibendum ac odio a, mollis maximus leo. Duis eget sapien risus. Vestibulum sed mauris sodales, tempus tortor quis, tincidunt erat.
+
+        Nam ac dapibus nisi. Vestibulum vestibulum turpis ac neque mollis suscipit. Vivamus dictum at libero in tincidunt. Fusce vestibulum suscipit efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit ante, egestas et pharetra at, dignissim vel risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras in dolor vel eros porta dictum id sed turpis. Ut quis lorem lobortis, pulvinar neque ut, mollis ante. Vivamus ultrices mauris vel erat blandit iaculis at sit amet quam. Nunc ornare orci sed ex malesuada ornare.
+
+        Proin vitae arcu et tortor mollis volutpat sit amet vel orci. Nunc convallis tortor a neque efficitur lacinia. Donec mollis fermentum magna sit amet ullamcorper. Proin non mauris lectus. Proin ac leo tellus. Proin condimentum, quam non aliquet varius, nisl libero molestie est, nec suscipit magna nisl ac dolor. Donec id diam magna. In fringilla ligula nec velit accumsan iaculis. Praesent ullamcorper feugiat sapien, a bibendum ligula pulvinar non. Morbi a ornare velit. Cras eu enim massa. Ut ac dui lectus. Etiam pharetra maximus condimentum.
+
+        Ut sodales hendrerit erat. Quisque ut laoreet dolor, vel dictum erat. Pellentesque libero ligula, laoreet id vehicula quis, eleifend eget ante. Integer cursus turpis eu facilisis aliquet. Integer ac ex eget ante gravida dignissim. Proin dui eros, pretium ac neque id, fringilla mollis nisl. Nulla interdum suscipit lectus. Donec ornare ipsum elit, sit amet gravida nibh porttitor eget. In aliquet facilisis odio, id vulputate lectus vestibulum sit amet.
+
+        Aliquam consectetur eget augue in molestie. Fusce scelerisque ac ipsum a varius. Maecenas eget lacus elit. Curabitur et maximus arcu. Phasellus quam sem, malesuada sit amet diam quis, blandit tincidunt turpis. Donec felis leo, semper quis tincidunt in, facilisis venenatis urna. Morbi congue orci vel semper condimentum. Donec laoreet turpis ex, nec interdum arcu luctus vitae. Duis metus enim, tempor et nunc sed, sagittis consectetur metus. Phasellus eget nunc maximus, cursus purus eget, sodales purus. Sed id blandit velit. Quisque in risus nulla. Fusce eu erat posuere mauris maximus suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        Maecenas quis ultricies nisi. Sed sapien diam, volutpat ut tristique efficitur, viverra nec metus. Vestibulum porttitor facilisis purus. Integer porttitor eu nunc ac pulvinar. Mauris mollis tortor nec magna luctus, non feugiat elit sagittis. Pellentesque at fermentum sapien. Morbi quis ligula vehicula, mollis tortor sed, tempor turpis. Curabitur ligula quam, rutrum et congue et, finibus scelerisque nisi. Pellentesque ex sem, tincidunt convallis neque in, viverra tincidunt quam. In hac habitasse platea dictumst. Aliquam nec ornare neque. Nam risus eros, pharetra bibendum tortor ut, laoreet consequat metus. Nam nec mi et ipsum condimentum pretium. Donec nisl erat, tincidunt sit amet lectus et, pellentesque malesuada enim. Fusce odio massa, vulputate a bibendum elementum, malesuada non augue.
+
+        Morbi vel metus ut lectus bibendum sodales eget et magna. Praesent in luctus metus. Vestibulum blandit lacus et nunc auctor, eu pretium lacus ullamcorper. Vestibulum id pretium urna, blandit elementum dolor. Integer vitae libero nunc. Cras semper pharetra lectus a egestas. Vestibulum aliquam magna neque, in interdum erat dignissim vitae. Suspendisse mattis condimentum massa, eu euismod nibh vestibulum vel. Sed ut turpis ut lorem rhoncus consequat. Nullam posuere cursus ante in euismod. Nulla quis tortor in magna tempor ultrices at sit amet mi. Nunc ultrices odio et dolor hendrerit, ut blandit elit interdum. Sed ultricies nulla lectus, eu tincidunt diam fringilla ut.
+
+        Aliquam in diam et lectus bibendum commodo. Praesent vestibulum, nunc eu mattis eleifend, metus velit luctus dui, id molestie tortor nisl eleifend nunc. Sed imperdiet elit sed semper malesuada. Aenean condimentum purus at finibus vulputate. Praesent semper tellus scelerisque, lacinia massa at, egestas dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean tincidunt ac tortor eu elementum. Cras posuere dui purus, vitae auctor arcu pretium eu. In gravida quam purus, et pretium tortor imperdiet nec. Ut bibendum lectus non ipsum vulputate gravida et quis felis. Donec faucibus arcu imperdiet purus tincidunt, quis laoreet mauris gravida.
+
+        Vestibulum eu mattis dui. Quisque a tempor purus. Morbi ullamcorper tempus vehicula. Nullam pulvinar in ligula vel egestas. Proin in odio lacinia, egestas lectus quis, sollicitudin dui. Nam sit amet tortor dapibus, mollis elit quis, ultrices neque. Sed bibendum quam nunc, eget maximus velit accumsan vitae. Praesent faucibus magna et lacinia ultricies. Donec suscipit posuere lectus sed malesuada. Quisque pharetra ultricies auctor.
+
+        In vel maximus nunc. Aliquam luctus tempus neque, id posuere leo iaculis in. Vivamus porta porta orci, vel pellentesque nisi pellentesque non. Phasellus imperdiet egestas lorem nec tempus. Aliquam neque sem, hendrerit molestie risus iaculis, sollicitudin hendrerit ante. Aliquam consectetur urna et tempus eleifend. Fusce a ante tincidunt, aliquet tellus aliquet, facilisis nisl. Pellentesque placerat vitae elit et mattis. Donec suscipit justo eu elementum dignissim. Vestibulum at est eu magna venenatis vulputate eu et purus.
+
+        Vivamus lorem nisl, varius vel nisl ac, pellentesque lacinia neque. Duis pharetra ligula nunc, id varius velit consectetur quis. Morbi fringilla quis eros ut maximus. Nunc dictum mi a ipsum interdum aliquet. Maecenas facilisis neque at ipsum posuere rutrum. Nullam euismod efficitur mauris. Nullam in sollicitudin dui. Integer dictum fermentum nunc id mattis. Cras vehicula ipsum lacinia, pulvinar tortor non, luctus mi. Duis accumsan dignissim ligula in fermentum. Pellentesque congue congue magna cursus porta. Phasellus in rutrum enim, at lobortis lorem.
+
+        Phasellus et sem eget tortor sollicitudin consectetur. Curabitur placerat malesuada rhoncus. Nulla sollicitudin est dolor, tincidunt ultrices sem fermentum vel. Aenean ullamcorper sagittis hendrerit. Cras a consequat nisi. Donec vitae arcu euismod, mollis erat convallis, malesuada dolor. In sit amet eleifend neque, id malesuada magna. Sed dignissim quam porttitor arcu feugiat, ut fringilla mi volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sed congue enim. Maecenas nisi tortor, suscipit eu risus ut, scelerisque venenatis arcu. Vivamus ac placerat diam. Pellentesque vitae leo sit amet nulla placerat malesuada.
+      </p>
+      <br />
+      <p>
+        <Link href="/">
+          <a>Go home</a>
+        </Link>
+      </p>
+    </div>
+  </Layout>
+)
+
+export default AboutPage
