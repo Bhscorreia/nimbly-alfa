@@ -1,0 +1,26 @@
+{
+  "name": "nimbly-alfa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhscorreia/nimbly-alfa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bhscorreia/nimbly-alfa/issues"
+  },
+  "homepage": "https://github.com/Bhscorreia/nimbly-alfa#readme",
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
