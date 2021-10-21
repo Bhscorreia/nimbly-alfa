@@ -27,7 +27,7 @@ async function preencherCadastro(cpfcnpj: string) {
     
     var div = globalThis.document?.createElement('div');
     console.log(div);    
-    var selected = globalThis.document?.querySelector("#log");
+    var selected = globalThis.document?.getElementById("#log");
     console.log(selected);
     
 }
