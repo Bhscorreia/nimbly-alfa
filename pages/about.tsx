@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const AboutPage = () => (
-  <Layout title="Spbre nós | Nimbly-Alfa">
+  <Layout title="Sobre nós | Nimbly-Alfa">
     <div className="px-4 py-5 my-5 text-center">
       <h1 className="display-5 fw-bold">Lorem Ipsum</h1>
       <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
