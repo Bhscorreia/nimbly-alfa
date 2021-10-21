@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 
 function CadastroPage() {
     const router = useRouter();
-    const cpfcnpj: string = router.query.cpfcnpj.toString();
+    const cpfcnpj: string = router.query.cpfcnpj?.toString();
 
     preencherCadastro(cpfcnpj);
 
