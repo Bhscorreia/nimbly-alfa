@@ -13,7 +13,7 @@ type Props = {
 const StaticPropsDetail = ({ item, errors }: Props) => {
   if (errors) {
     return (
-      <Layout title="Error | Nimbly Alfa">
+      <Layout title="Error | White Label">
         <p>
           <span style={{ color: 'red' }}>Error:</span> {errors}
         </p>
@@ -25,7 +25,7 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
     <Layout
       title={`${
         item ? item.name : 'Detalhes do cadastro'
-      } | Nimbly Alfa`}
+      } | White Label`}
     >
       {item && <ListDetail item={item} />}
     </Layout>
@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
     const cpfcnpj = params?.cpfcnpj
     const item = sampleUserData.find((data) => data.cpfcnpj === cpfcnpj)
-    
+
     return { props: { item } }
   } catch (err) {
     return { props: { errors: err.message } }
