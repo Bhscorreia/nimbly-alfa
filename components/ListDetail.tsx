@@ -1,15 +1,16 @@
 import * as React from 'react'
-
-import { User } from '../interfaces'
+import { Pessoa } from '../interfaces'
+import { tipoDocumento } from "../interfaces/tipoDocumento";
 
 type ListDetailProps = {
-  item: User
+  item: Pessoa
 }
 
-const ListDetail = ({ item: user }: ListDetailProps) => (
+const ListDetail = ({ item: pessoa }: ListDetailProps) => (
   <div>
-    <h1>Detail for {user.name}</h1>
-    <p>ID: {user.id}</p>
+    <h1>Dados encontratos para o {pessoa.documentType == tipoDocumento.CPF ? 'CPF' : 'CNPJ'} {pessoa.cpfcnpj}</h1>
+    <p>Nome: {pessoa.name}</p>
+    
   </div>
 )
 
