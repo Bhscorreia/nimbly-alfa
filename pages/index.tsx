@@ -7,7 +7,7 @@ const IndexPage = () => (
 
 <Layout title="Home | Nimbly-Alfa">
     <div className="px-4 py-5 my-5">
-      <h1>Olá seja bem vindo a API de exemplo de Cadastro</h1>
+      <h1>Cadastro de investidor BNY Mellon</h1>
       <div className="px-4 py-5 my-5">        
         <span>Por favor informe seu CPF ou CNPJ.</span>
         <form className="row g-3">

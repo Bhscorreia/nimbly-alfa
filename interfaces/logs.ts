@@ -1,5 +1,5 @@
 export enum logs {
-  'Buscando consentimentos ',
+  'Buscando consentimentos na base BNY Mellon ',
   'Nenhum consentimento encontrado ',
   'Buscando lista de bancos ',
   'Nenhum banco com consentimento ',
