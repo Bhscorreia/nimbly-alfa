@@ -13,7 +13,7 @@ const IndexPage = () => (
         <form className="row g-3">
           <div className="col-auto">
             <label className="visually-hidden">CPF ou CNPJ</label>
-            <input type="text" id='cpfcnpj' className="form-control form-control-lg" placeholder="Cpf ou CNPJ" onChange={changeCpgCnpj} />
+            <input id='cpfcnpj' type="number" className="form-control form-control-lg" placeholder="Cpf ou CNPJ" onChange={changeCpgCnpj} />
           </div>
           <div className="col-auto">
             <button type="button" className="btn btn-primary btn-lg mb-3" onClick={Enviar}>Enviar</button>            
@@ -35,7 +35,7 @@ const IndexPage = () => (
 )
 
 async function Enviar() {
-  if(!cpfcnpj){
+  if(!cpfcnpj || !(cpfcnpj.length == 11 || cpfcnpj.length == 14)){
     global.document.getElementById("cpfcnpj").focus();
     global.document.getElementById("statusToast").style.display = 'block';
   } else {
@@ -43,8 +43,8 @@ async function Enviar() {
   }
 }
 
-function changeCpgCnpj(ev) { 
-  global.document.getElementById("statusToast").style.display = 'none';
+function changeCpgCnpj(ev) {  
+  fechatoast();  
   cpfcnpj = ev.target.value;
 }
 
