@@ -6,18 +6,16 @@ var cpfcnpj: string  = '';
 const IndexPage = () => (
 
 <Layout title="Home | Nimbly-Alfa">
-    <div className="px-4 py-5 my-5">
-      <img src="/imagens/transferir.png" />
-      <h1>Cadastro de investidor BNY Mellon</h1>
+    <div className="text-center">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.theboatrace.org%2Fwp-content%2Fuploads%2FBNY-Mellon-300x150-1024x512.png&f=1&nofb=1" height="300px" width="400px"/>
+      <h1>Cadastro de investidor</h1>
       <div className="px-4 py-5 my-5">        
         <span>Por favor informe seu CPF ou CNPJ.</span>
-        <form className="row g-3">
-          <div className="col-auto">
+        <form className="text-center row justify-content-md-center">
+          <div className="col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <label className="visually-hidden">CPF ou CNPJ</label>
             <input id='cpfcnpj' type="number" className="form-control form-control-lg" placeholder="Cpf ou CNPJ" onChange={changeCpgCnpj} />
-          </div>
-          <div className="col-auto">
-            <button type="button" className="btn btn-primary btn-lg mb-3" onClick={Enviar}>Enviar</button>            
+            <button type="button" className="btn btn-primary btn-lg form-control" onClick={Enviar}>Enviar</button>
             <div className="toast hide" role="alert" aria-live="assertive" aria-atomic="true" id='statusToast'>
               <div className="toast-header">                
                 <strong className="me-auto">😕 Ops!</strong>              

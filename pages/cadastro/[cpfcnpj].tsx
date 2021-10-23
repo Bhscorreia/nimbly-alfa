@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import Layout from "../../components/Layout";
 import { Pessoa } from "../../interfaces";
 import { logs } from "../../interfaces/logs";
-
 type Props = {
   items: Pessoa[]
 }
@@ -20,9 +19,13 @@ function CadastroPage() {
 
     return (
     <Layout title="Home | Nimbly-Alfa">
-        <div className="px-4 py-5 my-5" id='principal'>
-          <h4>Iniciando cadastro para o {cpfcnpj?.length <= 11 ? 'CPF: ' : 'CNPJ: '} {cpfcnpj}</h4>
-          <div className="clearfix"></div>
+        <div className="text-center">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.theboatrace.org%2Fwp-content%2Fuploads%2FBNY-Mellon-300x150-1024x512.png&f=1&nofb=1" height="300px" width="400px"/>
+          <h1>Cadastro de investidor</h1>
+          <div id='principal'>
+            <h4>Iniciando cadastro para o {cpfcnpj?.length <= 11 ? 'CPF: ' : 'CNPJ: '} {cpfcnpj}</h4>
+            <div className="clearfix"></div>
+          </div>
         </div> 
       </Layout>      
 )}
@@ -44,52 +47,44 @@ async function preencherCadastro(continuar: boolean = false) {
   } else if (count == 3){
     ReactDOM.render(bancos, document?.querySelector('#principal'));
   } else if (count > 4){
-    ReactDOM.render(bancos, document?.querySelector('#principal'));
+    ReactDOM.render(finalizar, document?.querySelector('#principal'));
   }
 }
 
 function concedido(ev) {
-  let addValue = ev.target.dataset.id ?? 0;
+  let addValue = ev.currentTarget.dataset.id ?? 0;
   count += Number(addValue);
   preencherCadastro(true);
-}
-
-function negado() {
-
 }
 
 export default CadastroPage
 
 const credencial = (<div className="text-center">    
       <div>
-        <h3>Cadastro de investidor</h3>
-        <p>Para continuar precisaremos de algumas permissões</p>
+        <p>Para continuar precisaremos de algumas informações</p>
         <a className='btn btn-primary' href='#' onClick={concedido}>Continuar com OpenBanking</a>
         <p></p>
-        <a className='btn btn-default' href='#' onClick={negado}>Continuar manual</a>
+        <a className='btn btn-default' href='/' >Continuar manual</a>
       </div>
       <div>
       </div>
   </div>);
 
-const bancos = (<div className="text-center row">
-  <p>Localizamos 3 bancos no Open Banking</p>
-  <p>Qual deles gostaria de utilizar para realizar o cadastro?</p>
-  <div className="col-md-12"><a className='btn btn-outline-primary' href='#' data-id='1' onClick={concedido}>Santander</a></div>
-  <div className="col-md-12"><a className='btn btn-outline-primary' href='#' data-id='2' onClick={concedido}>Bradesco</a></div>
-  <div className="col-md-12"><a className='btn btn-outline-primary' href='#' data-id='3' onClick={concedido}>Banco do Brasil</a></div>
+const bancos = (<div className="text-center row justify-content-md-center">
+  <p>Encontramos as suas informações na base do OpenBanking</p>
+  <p>Você liberou acesso nas instituições abaixo,</p>
+  <p>qual delas vamos encontrar a maior quantidade de informações?</p>
+  <div className="btn-group col-sm-4	col-md-4	col-lg-4	col-xl-4">
+    <a className='btn btn-outline-primary btn-sm' href='#' data-id='1' onClick={concedido}><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.ERiMWpc91f25xqdZk9CvtQHaIL%26pid%3DApi&f=1" height="100px" width="100px" /></a>
+    <a className='btn btn-outline-primary btn-sm' href='#' data-id='2' onClick={concedido}><img src="https://www.btgpactual.com/assets/images/btg-logo-blue.svg" height="100px" width="100px" /></a>
+    <a className='btn btn-outline-primary btn-sm' href='#' data-id='3' onClick={concedido}><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2019%2F08%2Fb3-logo-01.png&f=1&nofb=1" height="100px" width="100px" /></a>
+  </div>
 </div>)
 
-const sembanco = (<div className="text-center">    
-<div>
-  <h3>Nenhum banco localizado</h3>
-  <p>Antes de continuar é preciso autorizar o compartilhamento de dados ao Open Banking</p>
-  <p>em algum banco que você já possua cadastro</p>
-  <i>Aqui poderá ser incluido uma explicação do motivo, importancia e segurança</i>
-</div>
-<div>
-  <a className='btn btn-primary' href='#' onClick={concedido}>Continuar</a>
-</div>    
-</div>);
+const finalizar = (<div>
+  <p>Legal! Conseguimos muitas informações já registradas</p>
+  <p>Agora precisamos apenas completar umas informações exclusivas deste cadastro</p>
+  <a className='btn btn-primary' href='/'>Seguir</a>
+</div>)
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
