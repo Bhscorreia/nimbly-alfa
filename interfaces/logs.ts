@@ -5,6 +5,6 @@ export enum logs {
   'Nenum banco localizado',
   'Buscando dados no Banco Santander ',
   'Buscando dados no Banco BTG Pactual ',
-  'Buscando dados no Banco do B3 '
+  'Buscando dados no Banco do XP '
 }
   
