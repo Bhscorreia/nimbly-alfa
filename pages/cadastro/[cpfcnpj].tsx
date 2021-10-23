@@ -44,8 +44,10 @@ async function preencherCadastro(continuar: boolean = false) {
     setTimeout(preencherCadastro, 600);
   } else if (count == 2) {
     ReactDOM.render(credencial, document?.querySelector('#principal'));
+    ReactDOM.render(videoSemAutoPlay, document?.querySelector('#video'));
   } else if (count == 3){
     ReactDOM.render(bancos, document?.querySelector('#principal'));
+    ReactDOM.render(videoSemAutoPlay, document?.querySelector('#video'));
   } else if (count > 4){
     ReactDOM.render(finalizar, document?.querySelector('#principal'));
   }
@@ -68,10 +70,13 @@ function finalizarCadastro(){
 }
 
 function playVideo() {
-  
+  ReactDOM.render(videoComAutoPlay, document?.querySelector('#video'));
 }
 
 export default CadastroPage
+
+const videoSemAutoPlay = (<iframe width="560" height="315" id='video' src="https://www.youtube.com/embed/lnIr-pqTQVc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>);
+const videoComAutoPlay = (<iframe width="560" height="315" id='video' src="https://www.youtube.com/embed/lnIr-pqTQVc?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>);
 
 const credencial = (<div className="text-center">    
       <div>
@@ -80,7 +85,7 @@ const credencial = (<div className="text-center">
         <p></p>
         <a className='btn btn-default' href='#' onClick={playVideo}>Continuar manual</a>
         <br />
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lnIr-pqTQVc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div id="video"></div>
       </div>
       <div>
       </div>
