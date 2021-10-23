@@ -62,7 +62,9 @@ function boxInfoAdicional() {
 }
 
 function finalizarCadastro(){
+  let div = <div></div>;
   global.document.getElementById("tituloCadastro").textContent = "Cadastro realizado com sucesso";
+  ReactDOM.render(div, document?.querySelector('#principal'));
 }
 
 function playVideo() {
