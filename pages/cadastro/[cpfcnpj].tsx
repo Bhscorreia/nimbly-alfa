@@ -47,7 +47,6 @@ async function preencherCadastro(continuar: boolean = false) {
     ReactDOM.render(videoSemAutoPlay, document?.querySelector('#video'));
   } else if (count == 3){
     ReactDOM.render(bancos, document?.querySelector('#principal'));
-    ReactDOM.render(videoSemAutoPlay, document?.querySelector('#video'));
   } else if (count > 4){
     ReactDOM.render(finalizar, document?.querySelector('#principal'));
   }
@@ -103,8 +102,8 @@ const bancos = (<div className="text-center">
   </div>
     <br />
     <br />
-  <div className="btn-group col-sm-4	col-md-4	col-lg-4	col-xl-4">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lnIr-pqTQVc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+  <div className="text-center" >
+    <a href="https://www.youtube.com/watch?v=lnIr-pqTQVc" target="_blank" >Por que utilizar o OpenBanking</a>
   </div>
 </div>)
 
