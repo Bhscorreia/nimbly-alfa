@@ -58,15 +58,14 @@ export default CadastroPage
 
 const credencial = (<div className="text-center">    
       <div>
-        <h3>Consentimento</h3>
+        <h3>Cadastro de investidor</h3>
         <p>Para continuar precisaremos de algumas permissões</p>
-        <p>Você nos autoriza a acessar os dados do Open Banking</p>
-        <i>Aqui poderá ser incluido uma explicação do motivo, importancia e segurança</i>
+        <a className='btn btn-primary' href='#' onClick={concedido}>Consultar base Open Banking</a>
+        <p></p>
+        <a className='btn btn-default' href='#' onClick={negado}>Continuar manual</a>
       </div>
       <div>
-        <a className='btn btn-primary' href='#' onClick={concedido}>Autorizar</a>
-        <a className='btn btn-danger' href='#' onClick={negado}>Negar</a>
-      </div>  
+      </div>
   </div>);
 
 const sembanco = (<div className="text-center">    
